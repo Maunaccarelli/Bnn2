@@ -1,0 +1,28 @@
+- var data = [
+- 	{
+- 		slist: ['#ebac79', '#d65b56'], 
+- 		title: 'gingerbread', 
+- 		ptext: 'Pancake muffin chocolate syrup brownie.'
+- 	}, 
+- 	{
+- 		slist: ['#90cbb7', '#2fb1a9'], 
+- 		title: 'brownie', 
+- 		ptext: 'Cake lemon berry muffin plum macaron.'
+- 	}, 
+- 	{
+- 		slist: ['#8a7876', '#32201c'], 
+- 		title: 'ice cream', 
+- 		ptext: 'Wafer apple tart pie muffin gingerbread.'
+- 	}, 
+- 	{
+- 		slist: ['#a6c869', '#37a65a'], 
+- 		title: 'lava cake', 
+- 		ptext: 'Liquorice plum topping chocolate lemon.'
+- 	}
+- ].reverse();
+- var n = data.length;
+
+while n--
+	article(style=`--slist: ${data[n].slist}`)
+		h3 #{data[n].title}
+		p #{data[n].ptext}
